@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>Animation</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main>
+      <div id="arrow" class="anim-container">
+        <div id="circle-a" class="circle-bg">
+          <div id="part-01" class="part"></div>
+          <div id="part-02" class="part"></div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function activate() {
+        console.log("it works");
+        document.getElementById("part-01").classList.toggle("active");
+        document.getElementById("part-02").classList.toggle("active");
+        document.getElementById("circle-a").classList.toggle("active");
+      }
+
+      // document.getElementById("arrow").onmouseenter = function() {
+      //   activate();
+      // };
+      // document.getElementById("arrow").onmouseleave = function() {
+      //   activate();
+      // };
+
+
+      document.getElementById("arrow").onclick = function() {
+        activate();
+      };
+
+    </script>
+  </body>
+</html>

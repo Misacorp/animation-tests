@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+.anim-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle-bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background-color: #FF8888;
+  border-radius: 50%;
+  transition: all 0.15s ease-in-out;
+}
+
+.circle-bg:hover {
+  background-color: #FFAAAA;
+  transition: all 0.15s ease-in-out;
+}
+
+.circle-bg.active {
+  background-color: #66BB66;
+  transition: all 0.15s ease-in-out;
+}
+
+.circle-bg.active:hover {
+  background-color: #88CC88;
+  transition: all 0.15s ease-in-out;
+}
+
+.part {
+  background-color: white;
+  overflow: hidden;
+}
+
+#part-01 {
+  position: absolute;
+  top: 50%;
+  transform: translateX(50%) translateY(-50%) rotate(45deg);
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  transition: all 0.15s ease-in-out;
+}
+
+#part-01.active {
+  transform: translateX(35%) translateY(50%) rotate(45deg);
+  width: 150px;
+}
+
+
+
+#part-02 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%) rotate(45deg);
+  width: 50px;
+  height: 200px;
+  border-radius: 50px;
+  transition: all 0.15s ease-in-out;
+}
+
+#part-02.active {
+  transform: translateX(22%) translateY(36%) rotate(45deg);
+  height: 250px;
+}
